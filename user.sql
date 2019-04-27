@@ -1,5 +1,5 @@
 CREATE DATABASE IF NOT EXISTS springbootdome1 DEFAULT CHARSET utf8 COLLATE utf8_general_ci;
-
+use springbootdome1;
 CREATE TABLE `user`  (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
@@ -7,9 +7,7 @@ CREATE TABLE `user`  (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = INNODB AUTO_INCREMENT = 4 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = DYNAMIC;
 
-
 INSERT INTO `user` VALUES (1, '筱安', 17);
 INSERT INTO `user` VALUES (2, '张三', 18);
 INSERT INTO `user` VALUES (3, '李四', 20);
-
 SET FOREIGN_KEY_CHECKS = 1;
